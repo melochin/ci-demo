@@ -17,7 +17,7 @@ public class LoginController {
     @PostMapping("/login")
     public String check(@RequestParam("username") String username,
                         @RequestParam("password") String password) {
-        throw new RuntimeException();
+        return "index";
     }
 
 }
