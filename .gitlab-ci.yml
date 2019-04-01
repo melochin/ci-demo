@@ -1,6 +1,7 @@
 stages:
   - build
   - test
+  - deploy
 
 build:
   stage: build
@@ -11,3 +12,11 @@ test:
   stage: test
   script:
     - mvn test
+
+deploy:
+  stage: deploy
+  script:
+  - mvn package -B -Dmaven.test.skip=true
+  - scp target/ci-demo-0.0.1-SNAPSHOT.jar kaze@10.10.26.157:~
+  - scp deploy.sh kaze@10.10.26.157:~
+  - ssh kaze@10.10.26.157 "chmod 700 ./deploy.sh; ./deploy.sh"
