@@ -1,11 +1,7 @@
 这是一个用来演示GitLab CI&CD的demo
 
 ## 背景知识
-<<<<<<< HEAD
 如果已经了解GitLab CI/CD，请直接跳到[Demo](#Demo)
-=======
-了解GitLab CI/CD直接跳到[Demo](#Demo)
->>>>>>> f750985fd514f0da9f5acd90e5944089aa45a900
 ### GitLab CI/CD
 
 ``GitLab``是一个远程仓库管理系统，和``GitHub``一样使用``Git``进行代码的版本控制管理。但是``GitLab``是开源的，可以利用``GitLab``搭建一个私有的代码仓库管理系统。([GitLab安装教程](https://about.gitlab.com/install))  
